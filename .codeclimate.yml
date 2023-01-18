@@ -9,7 +9,7 @@ similar-code:
        threshold: 3
 exclude_patterns:
   - "test"
-  - "main-test.py"
+  - "test.py"
   - "test_**"
   - "test_*"
   - "**/test/"
