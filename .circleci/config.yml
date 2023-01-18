@@ -7,6 +7,8 @@ jobs:
       - image: "circleci/python:3.6.4"
     steps:
       - checkout
+      - restore_cache:
+        key: deps1-{{ .Branch }}-{{ checksum "requirements.txt" }}
       - run: python3 main.py
   test:
     working_directory: ~/circleci-python
